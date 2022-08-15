@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.intro {
+  height: 100vh;
+  background-color: rgb(28, 25, 25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 2s, opacity 1s 0.5s;
+  position: relative;
+  z-index: 2;
+}
+.intro__bienvenue > p {
+  background-color: rgb(28, 25, 25);
+  font-size: 10vh;
+  transition: all 5s ease-out;
+  color: rgb(28, 25, 25);
+}
+.intro__bienvenue .showP {
+  color: white;
+}
+.intro > button {
+  width: 150px;
+  height: 50px;
+  color: rgb(28, 25, 25);
+  border: none;
+  background-color: rgb(28, 25, 25);
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all ease-in-out 3s;
+  transform: translateX(-200%);
+}
+.intro .showB {
+  color: aliceblue;
+  transform: translateX(0%);
+}
+
+.introHide {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+nav {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 8%;
+  display: flex;
+  align-items: center;
+}
+nav > p {
+  color: red;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8%;
+  box-shadow: 0px 0px 15px black;
+}
+
+.home {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+.home__header {
+  margin-bottom: 16px;
+  height: 8%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 0px 0px 15px black;
+}
+.home__header > h1 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.home__contain {
+  height: 80%;
+  overflow: scroll;
+  box-shadow: 0px 0px 15px black;
+  padding: 8px;
+  color: black;
+}
+
+/*# sourceMappingURL=anim.css.map */
